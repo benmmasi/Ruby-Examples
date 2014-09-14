@@ -1,0 +1,18 @@
+names = ['Ada', 'Belle', 'Chris']
+
+puts names
+puts names[0]
+puts names[1]
+puts names[2]
+puts names[3] 
+
+languages = ['English', 'German', 'Ruby']
+
+languages.each do |lang|
+  puts 'I love ' + lang + '!'
+  puts 'Don\'t you?'
+end
+
+puts 'And let\'s hear it for C++!'
+puts '...'
+
