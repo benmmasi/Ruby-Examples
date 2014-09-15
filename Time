@@ -1,0 +1,62 @@
+a = Array.new  + [12345]  # Array  addition.
+b = String.new + 'hello'  # String addition.
+c = Time.new
+
+puts 'a = '+a.to_s
+puts 'b = '+b.to_s
+puts 'c = '+c.to_s
+
+time  = Time.new   # The moment I generated this web page.
+time2 = time + 60  # One minute later.
+
+puts time
+puts time2
+
+colorArray = []  # same as Array.new
+colorHash  = {}  # same as Hash.new
+
+colorArray[0]         = 'red'
+colorArray[1]         = 'green'
+colorArray[2]         = 'blue'
+colorHash['strings']  = 'red'
+colorHash['numbers']  = 'green'
+colorHash['keywords'] = 'blue'
+
+colorArray.each do |color|
+  puts color
+end
+colorHash.each do |codeType, color|
+  puts codeType + ':  ' + color
+end
+
+class Integer
+  def to_eng
+    if self == 5
+      english = 'five'
+    else
+      english = 'fifty-eight'
+    end
+
+    english
+  end
+end
+
+# I'd better test on a couple of numbers...
+puts 5.to_eng
+puts 58.to_eng
+
+class Die
+
+  def roll
+    1 + rand(6)
+  end
+
+end
+
+# Let's make a couple of dice...
+dice = [Die.new, Die.new]
+
+# ...and roll them.
+dice.each do |die|
+  puts die.roll
+end
