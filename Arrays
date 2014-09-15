@@ -16,3 +16,54 @@ end
 puts 'And let\'s hear it for C++!'
 puts '...'
 
+foods = ['artichoke', 'brioche', 'caramel']
+
+puts foods
+puts
+puts foods.to_s
+puts
+puts foods.join(', ')
+puts
+puts foods.join('  :)  ') + '  8)'
+
+200.times do
+  puts []
+end
+
+favorites = []
+favorites.push 'raindrops on roses'
+favorites.push 'whiskey on kittens'
+
+puts favorites[0]
+puts favorites.last
+puts favorites.length
+
+puts favorites.pop
+puts favorites
+puts favorites.length
+
+word = 'word'
+words =[]
+
+puts 'Please type as many words per line then press the Enter Key.'
+puts 'When you are finished press the Enter Key without typing anything.'
+while word != ''
+word = gets.chomp
+words = words.push word
+end
+puts ''
+puts 'Your original values:'
+puts words
+puts ''
+puts 'Your values sorted:'
+puts words.sort
+puts ''
+
+toc = ['Table of Contents', 'Chapter 1: Getting Started', 'page 1','Chapter 2: Numbers','page 9',
+'Chapter 3: Letters','page 13']
+page_width = 60
+puts (toc[0].center(page_width))
+puts ''
+puts (toc[1].ljust(page_width/2) + toc[2].rjust(page_width/2))
+puts (toc[3].ljust(page_width/2) + toc[4].rjust(page_width/2))
+puts (toc[5].ljust(page_width/2) + toc[6].rjust(page_width/2))
